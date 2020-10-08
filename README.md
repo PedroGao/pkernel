@@ -5,3 +5,7 @@
 ## 实验
 
 * [ch3](./docs/ch3.md)
+* [ch4](./docs/ch4.md)
+* [ch5](./docs/ch5.md)
+* [ch6](./docs/ch6.md)
+* [ch7](./docs/ch7.md)
