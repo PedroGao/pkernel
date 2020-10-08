@@ -12,3 +12,7 @@
 * [ch8](./docs/ch8.md)
 * [ch9](./docs/ch9.md)
 * [ch10](./docs/ch10.md)
+
+## 参考
+
+* https://github.com/hurley25/hurlex-doc
