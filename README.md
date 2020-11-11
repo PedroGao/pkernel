@@ -10,7 +10,9 @@
 * [运行 Hello World ch3](./docs/ch3.md)
 * [显示字符 ch4](./docs/ch4.md)
 * [调试 ch5](./docs/ch5.md)
+* [全局段描述符表 ch6](./docs/ch6.md)
 
 ## 参考资料
 
-* Rome操作系统实现:https://blog.csdn.net/gemini_star/category_567624.html。
+* Rome 操作系统实现:https://blog.csdn.net/gemini_star/category_567624.html。
+* x86 操作系统实现: wiki.0xffffff.org/。
