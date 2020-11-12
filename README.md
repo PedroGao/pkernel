@@ -12,6 +12,7 @@
 * [调试 ch5](./docs/ch5.md)
 * [全局段描述符表 ch6](./docs/ch6.md)
 * [中断 ch7](./docs/ch7.md)
+* [中断请求和定时器中断 ch8](./docs/ch8.md)
 
 ## 参考资料
 
