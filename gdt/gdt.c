@@ -5,14 +5,6 @@
  *
  *    Description:  全局描述符表相关函数
  *
- *        Version:  1.0
- *        Created:  2013年11月07日  17时09分54秒
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Hurley (LiuHuan), liuhuan1992@gmail.com
- *        Company:  Class 1107 of Computer Science and Technology
- *
  * =====================================================================================
  */
 
