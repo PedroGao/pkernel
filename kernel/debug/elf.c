@@ -4,21 +4,14 @@
  *       Filename:  elf.c
  *
  *    Description:  ELF 格式解析相关函数
- *
- *        Version:  1.0
- *        Created:  2013年11月06日 12时51分24秒
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Hurley (LiuHuan), liuhuan1992@gmail.com
- *        Company:  Class 1107 of Computer Science and Technology
- *
+ * 
  * =====================================================================================
  */
 
 #include "common.h"
 #include "string.h"
 #include "elf.h"
+#include "vmm.h"
 
 // 从 multiboot_t 结构获取ELF信息
 elf_t elf_from_multiboot(multiboot_t *mb)
@@ -30,16 +23,16 @@ elf_t elf_from_multiboot(multiboot_t *mb)
     uint32_t shstrtab = sh[mb->shndx].addr;
     for (i = 0; i < mb->num; i++)
     {
-        const char *name = (const char *)(shstrtab + sh[i].name);
+        const char *name = (const char *)(shstrtab + sh[i].name) + PAGE_OFFSET;
         // 在 GRUB 提供的 multiboot 信息中寻找内核 ELF 格式所提取的字符串表和符号表
         if (strcmp(name, ".strtab") == 0)
         {
-            elf.strtab = (const char *)sh[i].addr;
+            elf.strtab = (const char *)sh[i].addr + PAGE_OFFSET;
             elf.strtabsz = sh[i].size;
         }
         if (strcmp(name, ".symtab") == 0)
         {
-            elf.symtab = (elf_symbol_t *)sh[i].addr;
+            elf.symtab = (elf_symbol_t *)(sh[i].addr + PAGE_OFFSET);
             elf.symtabsz = sh[i].size;
         }
     }

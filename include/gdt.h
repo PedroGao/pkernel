@@ -5,14 +5,6 @@
  *
  *    Description:  GDT 描述符定义
  *
- *        Version:  1.0
- *        Created:  2013年11月07日 16时16分06秒
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  Hurley (LiuHuan), liuhuan1992@gmail.com
- *        Company:  Class 1107 of Computer Science and Technology
- *
  * =====================================================================================
  */
 
